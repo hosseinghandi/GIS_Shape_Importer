@@ -28,6 +28,12 @@ This helps users **reduce the time and complexity of GIS preprocessing**, especi
 
 * Provide the **`.shp` file path**
 * Make sure the **PyShp library** is available:
+Install if needed:
+
+```python
+pip install pyshp
+```
+and 
 
 ```python
 import shapefile
