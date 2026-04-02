@@ -27,8 +27,7 @@ This helps users **reduce the time and complexity of GIS preprocessing**, especi
 ### 1. Connect the shapefile
 
 * Provide the **`.shp` file path**
-* Make sure the **PyShp library** is available:
-Install if needed:
+* Make sure the **PyShp library** is available or Install if needed:
 
 ```python
 pip install pyshp
