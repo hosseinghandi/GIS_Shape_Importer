@@ -1,72 +1,42 @@
-# ShapeFile_Geometry_Attribute_Reader
+## GIS Shape Importer 🔷
+A component for reading ESRI shapefiles and converting geometry and attributes into structured, usable data.
 
-This component reads **ESRI Shapefiles (.shp)**, converts geometry into **Grasshopper DataTrees**, extracts **attribute keys and values**, and automatically moves the dataset to the **Rhino origin center**.
+## 🧩 Overview
+This component processes .shp files and converts their geometry and attributes into Grasshopper DataTrees, enabling direct use within parametric and simulation workflows.
 
-It automatically extracts:
+## 🎯 Project Goals
+The goal of this tool was to simplify the integration of GIS data into parametric design workflows by automating geometry extraction, attribute handling, and data structuring.
 
-* shape geometry points
-* multipart boundaries
-* attribute field names
-* attribute values
-* shape-part tree structure
-* centered geometry
+## 📂📘 Getting Started
+To get started, open the provided example files and follow the included instructions.
 
-This helps users **reduce the time and complexity of GIS preprocessing**, especially when preparing shapefile-based workflows for:
+## 🛠 Tech 
+- Python
+ 
+## ✨ Main Features
+- Reading and parsing ESRI shapefiles (.shp)
+- Extraction of attribute field names and values
+- Direct compatibility with Rhino modeling
+  
+## ⚠️ Challenges I Faced
+- Managing large GIS datasets while keeping data organized and efficient
 
-* urban design
-* GIS-to-Rhino conversion
-* parcel studies
-* road networks
-* simulation boundaries
-* Ladybug preprocessing
+## 🤖 How I Used AI
+- Supported processing diverse geometry and data types to enable meaningful attribute extraction
 
----
+## 📦 Dependencies
 
-## How to Use
+Make sure the **PyShp** library is installed:
 
-### 1. Connect the shapefile
-
-* Provide the **`.shp` file path**
-* Make sure the **PyShp library** is available or Install if needed:
-
-```python
+```bash
 pip install pyshp
 ```
-and 
 
-```python
-import shapefile
-```
-
-### 2. Run the component
-
-* Switch the **Boolean toggle to `True`**
-
-### 3. Use the outputs
-
-The component returns:
-
-* points_tree
-* attributes_keys
-* attributes_values
-* multipart tree structure shape_index;part_index
-
-### 4. Connect to downstream workflows
-
-Use the generated geometry directly in:
-
-* Rhino modeling
-* urban heat workflows
-* zoning visualization
-* road analysis
-* Ladybug simulations
-
----
-
-## Citation and Project Use
-
+## 🧾Citation and Project Use
 If you use this tool in research, publications, teaching, or professional projects, please cite the repository and kindly inform the author.
 
-**Author:** Hossein Ghandi
+**Author:**
+Hossein Ghandi 🧑‍💻
+📧 Email: [ghandih22@email.com](mailto:ghandih22@email.com)
 
 Feedback, case studies, and derived applications are highly appreciated and help support future development of the workflow.
